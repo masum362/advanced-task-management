@@ -12,8 +12,10 @@ export const ThemeProvider = ({ children }) => {
 
 
   useEffect(() => {
-
-  }, [todos])
+    setTimeout(() => {
+      setSuccessMsg("")
+    },1000)
+  }, [todos,successMsg])
   
 
   return (
